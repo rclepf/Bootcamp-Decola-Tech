@@ -1,4 +1,6 @@
 function compNum(num1, num2){
+    if (!num1 || !num2) return 'Defina dois números.';
+
     const Iguais = saoIguais(num1, num2);
     const Somas = soma(num1, num2);
 
@@ -34,5 +36,5 @@ function soma(num1, num2){
     return `Sua soma é ${adicao}, que é ${result10} que 10 e ${result20} que 20.`
 }
 
-console.log(compNum(6, 6));
+console.log(compNum(6, 5));
 
